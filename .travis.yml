@@ -9,4 +9,4 @@ go:
   - tip
 
 script:
-  - cd $TRAVIS_BUILD_DIR && go test -cover
+  - cd $TRAVIS_BUILD_DIR && go test
