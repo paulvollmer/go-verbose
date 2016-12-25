@@ -3,7 +3,17 @@ package verbose
 import (
 	"bytes"
 	"testing"
+	"fmt"
 )
+
+func Example()  {
+	var buf bytes.Buffer
+	debug := New(&buf, true)
+	debug.Print("hello world")
+	fmt.Println(&buf)
+	// Output:
+	// hello world
+}
 
 func Test_Verbose(t *testing.T) {
 	var buf bytes.Buffer
